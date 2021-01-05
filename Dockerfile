@@ -124,4 +124,4 @@ STOPSIGNAL SIGQUIT
 ENTRYPOINT ["dumb-init"]
 
 # 运行proxypoolcheck
-CMD ["/proxypoolcheck-src/proxypoolcheck", "-c", "/proxypoolcheck-src/conf/proxypoolcheck/config.yaml", "-d"]
+CMD ["/proxypoolcheck-src/proxypoolcheck", "-c", "/proxypoolcheck-src/conf/proxypoolcheck/config.yaml"]
