@@ -84,7 +84,7 @@ jobs:
         registry_url: 'registry.cn-hongkong.aliyuncs.com'
         namespaces: 'danxiaonuo'
         repository_name: 'proxypoolcheck'
-        user_name: danxiaonuo
+        user_name: ${{ secrets.ALIYUN_USERNAME }}
         password: ${{ secrets.ALIYUN_PASSWORD }}
         image_version: ${{ matrix.DOCKER_TAG }}
         docker_file: '.'
