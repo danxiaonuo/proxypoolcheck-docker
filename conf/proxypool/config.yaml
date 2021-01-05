@@ -1,0 +1,14 @@
+# proxypool remote server url. Blank for http://127.0.0.1:8080
+server_url: https://proxypool.danxiaonuo.workers.dev
+# server_url: https://example.proxypoolserver.com/clash/proxies?type=vmess
+
+# For your local server
+request: http   # http / https
+domain:         # default: 127.0.0.1
+port:           # default: 80
+
+show_remote_speed: true # default false
+
+speedtest: true     # default false
+connection:         # default 5
+timout:             # default 10
