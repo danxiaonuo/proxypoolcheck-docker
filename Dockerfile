@@ -13,6 +13,10 @@ ENV TZ=$TZ
 ARG LANG=C.UTF-8
 ENV LANG=$LANG
 
+# 版本号
+ARG TAGS=v0.3.1
+ENV TAGS=$TAGS
+
 # 镜像变量
 ARG DOCKER_IMAGE=danxiaonuo/proxypoolcheck
 ENV DOCKER_IMAGE=$DOCKER_IMAGE
@@ -43,7 +47,7 @@ RUN set -eux && \
 # 运行工作目录
 WORKDIR /build
 # 克隆源码运行安装
-RUN git clone --depth=1 --progress https://github.com/Sansui233/proxypoolCheck.git /src && \
+RUN git clone --depth=1 -b ${TAGS} --progress https://github.com/Sansui233/proxypoolCheck.git /src && \
     cd /src && go mod download && make docker
 # ##############################################################################
 
