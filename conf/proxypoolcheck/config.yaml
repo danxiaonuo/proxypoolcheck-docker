@@ -1,12 +1,10 @@
-# proxypool remote server url. Blank for http://127.0.0.1:8080
-server_url: https://proxypoolcheck.xiaonuo.live
-# server_url: https://example.proxypoolserver.com/clash/proxies?type=vmess
-
+server_url: 
+  - https://proxypool.xiaonuo.live
 
 # For your local server
 request: http   # http / https
 domain:         # default: 127.0.0.1
-port:           # default: 80
+port: 12586     # default: 80
 
 cron_interval: 15       # default: 15  minutes
 show_remote_speed: true # default false
