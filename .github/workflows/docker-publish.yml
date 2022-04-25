@@ -21,7 +21,7 @@ on:
     inputs:
       build:
         description: 'build proxypoolcheck'
-        required: false
+        required: true
         default: 'build proxypoolcheck'
   # 定时触发编译(每天早5点)
   schedule:
